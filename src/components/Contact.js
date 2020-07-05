@@ -1,19 +1,25 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import './chat-app.css';
 
 
-function Contact(){
+function Contact(props){
     return (
     <div className = "Contact">
-       <img className = "avatar" src = "https://randomuser.me/api/portraits/men/40.jpg"/>
+       <img  className = "avatar" src = {props.avatar} alt = {props.name}/>
        <div className = "status">
-          <h2 className = "name">Marvin Marshall</h2>
-          <h3 className ="status-online">Online</h3>
+          <h2 className = "name">{props.name}</h2>
+          <h3 className = "status-online">{props.statusOnline ? 'online' : 'offline'}</h3>
+          
       </div>  
     </div>
 
     )
 
 }
+Contact.propTypes = {
+    statusOnline: PropTypes.string.isRequired,
+    statusOffline: PropTypes.string.isRequired,
+  };
 
 export default  Contact;
