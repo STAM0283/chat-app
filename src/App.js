@@ -8,20 +8,19 @@ function App() {
       <Contact
       name = "Marvin Marshall"
       avatar = "https://randomuser.me/api/portraits/men/40.jpg"
-      statusOnline = {true}
+      status = {true}
       
       />
       <Contact
       name = "Addison Little"
-      avatar = "https://randomuser.me/api/portraits/women/79.jpg"
-    
-      statusOffline = {false}
+      avatar = "https://randomuser.me/api/portraits/women/79.jpg"   
+      status = {false}
      
       />
       <Contact
       name = "Jonathan Walker"
       avatar = "https://randomuser.me/api/portraits/men/96.jpg"
-      statusOnline = {true}
+      status = {true}
       />
      
     </div>
