@@ -6,7 +6,9 @@
     display: flex;
     align-items: center;
   }
-  
+  .status-text, .status-online, .status-offline{
+    cursor: pointer;
+  }
   /* Contact image */
   .Contact .avatar {
     border-radius: 50%;
@@ -26,6 +28,9 @@
     color: #999;
     margin: 0;
     display: inline-block;
+  }
+  .status-text{
+    cursor: pointer;
   }
   
   /* Status (rounded&colored indicator) */
